@@ -11,30 +11,30 @@ body {
     float: right;
 }
 
+/* EDITORS BOXES */ 
 .editors {
     margin: 0px 0px 0 217px;
     padding: 10px;
     position: relative;
     background: #F6F6F6;
 }
-
-.top, .bottom {
-    width: 100%;
-    height: 50%;
+.editorsContainer {
+		vertical-align: top;
+    width: calc(50% - 5px);
     overflow: hidden;
+		box-sizing: border-box;
+		display: inline-block;
 }
-
-.editorContainer {
-    width: 49%;
-    float: left;
-    margin-right: 5px;
-    margin-bottom: 5px;
-}
-
 .editor {
     height: 400px;
     width: 100%;
     border: 1px #cecece solid;
+    margin-right: 5px;
+    margin-bottom: 5px;
+		box-sizing: border-box;
+}
+.editor#preview { 
+	height: 1210px;
 }
 
 .scrollable-menu {
