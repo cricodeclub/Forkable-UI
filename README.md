@@ -1,6 +1,40 @@
-# JSTinker
+# Forkable-UI
 
-An open source clone of [JSFiddle](http://jsfiddle.net/), this project was made to provide insight into how something like this is created. My goal was to mimic as many of JSFiddle's features as possible in an offline environment. No accounts or internet connection totally necessary (besides online resources).
+**Forkable-UI** is an open source kick-starter for forkable cloud services, such as [JSFiddle](http://jsfiddle.net/) or PasteBin, etc. It provides a demo, easy to hack minimalist shell. **Forkable-UI** is *document-agnostic* with classic functions, a writing pad and a rendering area. Functions of `Run/Render`, `Save`, `Fork`, `TidyUp`, `Collaborate`, `Embed/Share`, `Print` apply to "the document", with relevant API calls to a `Mongodb` database. You can clone, edit the document's shape, editors, and rendeing function to open a new forkable cloud service with your own processing logic.
+
+You focus your efforts on defining your document's shape (aka `schema`), editor's UI, its dynamics and rendering logic.
+
+No account necessary.
+We would welcome a modular account management, so an user could keep his creations and liked documents under hand. See section "Contributing".
+
+## Stack
+- HTML/CSS: Bulma.css
+- JS: native javascript
+- API: python-eve. Verbs : GET, POST.
+- Database: Mongodb
+
+## Schema
+
+
+## Provided
+* Topbar
+** Run/render
+** Save to cloud : 
+*** `POST` to mongodb
+*** create new url which serves the results
+*** "move" to that `url/n+1/`
+** Fork
+** TidyUp
+** Collaborate
+** Embed (optional)
+** Print`(optional)
+* Main
+** Sider left
+** Sider right
+* Footer
+
+## Not provided
+* User login/logout, auth, settings (optional)
 
 ## Features
 
@@ -22,19 +56,17 @@ An open source clone of [JSFiddle](http://jsfiddle.net/), this project was made 
 ## Credits
 
 #### Contributers
-John Cipponeri ([@johncipponeri](http://twitter.com/johncipponeri))
+{name} ([@pseudo](http://twitter.com/pseudo))
 
 #### Resources used
-Ace ([link](http://ace.c9.io/))
-
-JSBeautifier ([link](http://jsbeautifier.org/))
-
-Bootstrap 3.3.2 ([link](http://getbootstrap.com/))
-
-JQuery 2.1.3 ([link](http://blog.jquery.com/2014/12/18/jquery-1-11-2-and-2-1-3-released-safari-fail-safe-edition/))
+* Ace ([link](http://ace.c9.io))
+* JSBeautifier ([link](http://jsbeautifier.org))
+* Bootstrap 3.3.2 ([link](http://getbootstrap.com))
+* JQuery 2.1.3 ([link](http://blog.jquery.com/2014/12/18/jquery-1-11-2-and-2-1-3-released-safari-fail-safe-edition/))
 
 #### Inspiration
-JSFiddle ([link](http://jsfiddle.net/))
+* JSFiddle ([link](http://jsfiddle.net))
+* JStinker ([link](http://johncipponeri.github.io/jstinker/#))
 
 ## License
 
